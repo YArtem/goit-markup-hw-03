@@ -11,26 +11,98 @@
   --portfolio-items-text-color: #434455;
 }
 
+/* ======= Скидання стилів, які ідуть за замовчуванням від браузера ======= */
+
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
 }
+
 button {
   cursor: pointer;
 }
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .accent-header {
   color: #2e2f42;
 }
+
 .accent-footer {
   color: #f4f4fd;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: var(--background-color);
 }
+
+/* ======= ======= ======= стилі хедера ======= ======= ======= */
+
+/* .header-pages {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+} */
+
+.navigation {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.page-navigation {
+  display: flex;
+}
+.menu {
+  /* .contacts-nav { */
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-nav {
+  display: flex;
+}
+
+.contacts .contacts-nav {
+  column-gap: 40;
+}
+.page-navigation .menu {
+  width: 261px;
+}
+
+.contacts-nav-item {
+  margin-right: 40;
+}
+
+.wrapper {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -39,7 +111,9 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
+
 .menu-list,
 .menu-item {
   font-weight: 500;
