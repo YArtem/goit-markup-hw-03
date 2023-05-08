@@ -339,10 +339,10 @@ body {
 }
 /* задаємо контейнеру співробітника відступи від його фото */
 .workers-container {
-  margin-top: 32px;
-  margin-right: 16px;
-  margin-bottom: 32px;
-  margin-left: 16px;
+  padding-top: 32px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 /* Задаємо стилі ПІП (заголовку) карточки співробітника */
 .team-list-item-title {
@@ -356,6 +356,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
+/* задаємо стилі посаді співробітника */
 .team-list-item-text {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -366,8 +367,26 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+/* ====== ==== === Футер === ==== ====== */
+
 .footer-pages {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
   background-color: #2e2f42;
+}
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.logo.logo-footer {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.footer-pages-text {
+  max-width: 264px;
 }
 .applicationarea-btn {
   background: var(--btn-portfolio-background-color);
