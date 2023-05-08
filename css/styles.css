@@ -31,6 +31,8 @@ h3,
 h4,
 p {
   margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 0;
 }
 
@@ -61,6 +63,8 @@ body {
 
 /* ======= ======= ======= стилі хедера ======= ======= ======= */
 
+/* ------ ----- ----  ставим єлементи хедера в рядок 
+та вирівнюєм їх по горизонтальній вісі  ------ ----- ---- */
 .navigation {
   display: flex;
   align-items: center;
@@ -72,6 +76,12 @@ body {
 .menu {
   display: flex;
 }
+.contacts-nav {
+  display: flex;
+}
+
+/* -------  робимо відступи в списку меню  ------- */
+
 .menu .menu-item {
   margin-right: 40px;
 }
@@ -80,16 +90,19 @@ body {
   margin-right: 0px;
 }
 
-.contacts-nav {
-  display: flex;
-}
+/* ------- робимо відступи в списку контактів  ------ */
 
 .contacts-nav .contacts-nav-item:not(:last-child) {
   margin-right: 40px;
 }
+
+/* --------  притискаємо контакти до правої сторони -------- */
+
 .contacts {
   margin-left: auto;
 }
+
+/* --------  задаємо ширину секціям контенту -------- */
 
 .container {
   width: 1158px;
@@ -100,9 +113,19 @@ body {
   padding-right: 15px;
 }
 
-.logo {
-  margin-right: 76px;
+/* --------  задаємо рамку хедеру та її колір -------- */
 
+.header-pages {
+  border-bottom: 1px solid #e7e9fc;
+}
+/* --------  логотип -------- */
+.logo {
+  /* --------  робимо відступ між логотипом та навігацією -------- */
+  margin-right: 76px;
+  /* --------  розширюємо область логотипа -------- */
+  padding-top: 24px;
+  padding-bottom: 24px;
+  /* --------  стилі логотипа -------- */
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -112,31 +135,37 @@ body {
   color: #4d5ae5;
 }
 
-.menu-list .menu-item-link,
+/* --------  стилі списків меню та контактів -------- */
+
 .menu-item .menu-item-link {
   display: block;
+  /* --------  розширюємо область пунктів меню -------- */
   padding-top: 24px;
   padding-bottom: 24px;
-
+  /* --------  стилі пунктів меню -------- */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--menu-color);
 }
-.menu-item-link {
+/* .menu-item-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--menu-color);
-}
+} */
 .menu .link:hover,
 .menu .link:focus {
   color: #404bbf;
 }
 .contacts-item-link,
 .contacts {
+  /* --------  розширюємо область контактів -------- */
+  padding-top: 24px;
+  padding-bottom: 24px;
+  /* --------  стилі пунктів контактів -------- */
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -148,10 +177,28 @@ body {
 .contacts-item-link:focus {
   color: #404bbf;
 }
+
+/* ====== ==== === стилі hero === ==== ===== */
+
+/* -------- колір фона секції хіро------- */
 .hero {
   background-color: var(--hero-background-color);
 }
+/* ------робимо відступи з гори та низу для контента хіро----- */
+.hero-container {
+  display: block;
+  width: 496px;
+  padding-top: 188px;
+  padding-right: 0px;
+  padding-bottom: 188px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+/* ------стилі заголовку хіро----- */
+
 .hero-title {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -159,15 +206,19 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
 }
+/* ------ стилі кнопки хіро ----- */
 .hero-btn {
-  background-color: #4d5ae5;
+  margin-top: 48px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   font-family: "Roboto", sans-serif;
+  border-color: #4d5ae5;
+
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
   color: #ffffff;
 }
