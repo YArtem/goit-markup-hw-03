@@ -191,7 +191,7 @@ body {
 /* ------стилі заголовку хіро----- */
 
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
   font-family: "Roboto", sans-serif;
@@ -205,7 +205,7 @@ body {
 /* ------ стилі кнопки хіро ----- */
 .hero-btn {
   display: block;
-  min-width: 196px;
+  min-width: 169px;
   height: 56px;
   margin-top: 48px;
   border: none;
@@ -230,12 +230,27 @@ body {
 
 /* ====== ==== секція наші принципи ==== ====== */
 
+/* ---- задаємо відступи з гори та низу секції --- */
 .principies {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
+/* ------ виставляємо принципи в рядок -----*/
+.principies-list {
+  display: flex;
+  /* ------ Робимо відступи між принципами -----*/
+  gap: 24px;
+}
+
+/* -----  задаємо ширину блоків принципiв -----  */
+.principies-item {
+  width: calc((100%-3 * 24px) / 4);
+}
+
+/* ------ Задаемо стилі заголовкцв принципів ----- */
 .principies-item-title {
+  margin-bottom: 8px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -244,6 +259,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
+/* ------ Задаємо стилі тексту принципів ------ */
 .principies-item-text {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -253,7 +269,15 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+
+/* ====== ==== === Секція ми робимо === ==== ====== */
+/* ---- задаємо відступ з низу секції --- */
+.wedoing {
+  padding-bottom: 120px;
+}
+/* ------ Задаемо стилі заголовку секції ----- */
 .wedoing-title {
+  margin-bottom: 72px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -264,10 +288,29 @@ body {
   text-transform: capitalize;
   color: var(--title-color);
 }
+/*  ----- Робимо список флекс елементом
+ та виставляємо його в рядок та робимо відступи між картинками   */
+.wedoing-list {
+  display: flex;
+  gap: 24px;
+}
+/* Задаємо ширину малюнка */
+.wedoing-list-item {
+  flex-basis: calc((100% - 24 * 2px) / 3);
+}
+
+/* ====== ==== === Секція наша команда === ==== ====== */
+/* --- ---- задаємо відступи з гори та низу внутрі секції
+ та колір заднього фону --- */
+
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+/* ------ Задаемо стилі заголовку секції ----- */
 .team-title {
+  margin-bottom: 72px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -278,10 +321,32 @@ body {
   text-transform: capitalize;
   color: var(--title-color);
 }
+
+/*  ----- Робимо список флекс елементом
+ та виставляємо його в рядок та робимо відступи між карточками співробітників  --- */
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+/*   -----  Задаємо ширину тіні та радіуси карточкам співробітників ----- */
 .team-list-item {
   background-color: #ffffff;
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
+/* задаємо контейнеру співробітника відступи від його фото */
+.workers-container {
+  margin-top: 32px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+  margin-left: 16px;
+}
+/* Задаємо стилі ПІП (заголовку) карточки співробітника */
 .team-list-item-title {
+  margin-bottom: 8px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
