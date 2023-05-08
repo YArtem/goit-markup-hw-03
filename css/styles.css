@@ -419,7 +419,7 @@ body {
   padding-right: 24px;
   padding-bottom: 12px;
   padding-left: 24px;
-  border: 1px solid: var(--btn-portfolio-border-color);
+  border: 1px solid var(--btn-portfolio-border-color);
   border-radius: 4px;
   background: var(--btn-portfolio-background-color);
   font-family: "Roboto", sans-serif;
@@ -464,10 +464,11 @@ body {
   padding-bottom: 32px;
   padding-left: 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .project-item-list {
-   width: calc((100% - 48px) / 3)
+  width: calc((100% - 48px) / 3);
 }
 
 .project-item-list-title {
