@@ -180,24 +180,20 @@ body {
 
 /* ====== ==== === стилі hero === ==== ===== */
 
-/* -------- колір фона секції хіро------- */
 .hero {
+  /* -------- колір фона секції хіро------- */
   background-color: var(--hero-background-color);
-}
-/* ------робимо відступи з гори та низу для контента хіро----- */
-.hero-container {
-  display: block;
-  width: 496px;
+  /* ------робимо відступи з гори та низу для секції хіро----- */
   padding-top: 188px;
-  padding-right: 0px;
   padding-bottom: 188px;
-  padding-left: 0px;
-  text-align: center;
 }
 
 /* ------стилі заголовку хіро----- */
 
 .hero-title {
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 56px;
@@ -208,12 +204,17 @@ body {
 }
 /* ------ стилі кнопки хіро ----- */
 .hero-btn {
+  display: block;
+  min-width: 196px;
+  height: 56px;
   margin-top: 48px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-family: "Roboto", sans-serif;
-  border-color: #4d5ae5;
 
   font-style: normal;
   font-weight: 500;
@@ -226,6 +227,14 @@ body {
 .hero-btn:focus {
   background-color: #404bbf;
 }
+
+/* ====== ==== секція наші принципи ==== ====== */
+
+.principies {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .principies-item-title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
