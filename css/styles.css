@@ -61,42 +61,39 @@ body {
 
 /* ======= ======= ======= стилі хедера ======= ======= ======= */
 
-/* .header-pages {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-} */
-
 .navigation {
   display: flex;
-  /* justify-content: space-between; */
+  align-items: center;
 }
 .page-navigation {
   display: flex;
+  align-items: center;
 }
 .menu {
-  /* .contacts-nav { */
   display: flex;
-  justify-content: space-between;
+}
+.menu .menu-item {
+  margin-right: 40px;
+}
+
+.menu .menu-item:last-child {
+  margin-right: 0px;
 }
 
 .contacts-nav {
   display: flex;
 }
 
-.contacts .contacts-nav {
-  column-gap: 40;
+.contacts-nav .contacts-nav-item:not(:last-child) {
+  margin-right: 40px;
 }
-.page-navigation .menu {
-  width: 261px;
-}
-
-.contacts-nav-item {
-  margin-right: 40;
+.contacts {
+  margin-left: auto;
 }
 
-.wrapper {
+.container {
   width: 1158px;
+  /*display: flex; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -104,6 +101,8 @@ body {
 }
 
 .logo {
+  margin-right: 76px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -111,11 +110,14 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
 }
 
-.menu-list,
-.menu-item {
+.menu-list .menu-item-link,
+.menu-item .menu-item-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
