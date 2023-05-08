@@ -6,6 +6,7 @@
   --title-color: #2e2f42;
   --text-color: #434455;
   --btn-portfolio-color: #4d5ae5;
+  --btn-portfolio-border-color: #e7e9fc;
   --btn-portfolio-background-color: #f4f4fd;
   --portfolio-items-title-color: #2e2f42;
   --portfolio-items-text-color: #434455;
@@ -418,7 +419,7 @@ body {
   padding-right: 24px;
   padding-bottom: 12px;
   padding-left: 24px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid: var(--btn-portfolio-border-color);
   border-radius: 4px;
   background: var(--btn-portfolio-background-color);
   font-family: "Roboto", sans-serif;
@@ -438,6 +439,7 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  border: 1px solid transparent;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -449,8 +451,20 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
 }
+/* ставимо проекти по горизонталі та робимо сітку 3х3 */
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+.project-container {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
 
 .project-item-list-title {
+  margin-bottom: 8px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
